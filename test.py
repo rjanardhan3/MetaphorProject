@@ -34,7 +34,7 @@ print(get_completion["choices"][0]["message"]["content"])
 #use Metaphor to get the corresponding websites
 query = get_completion["choices"][0]["message"]["content"]
 search_response = metaphor.search(
-    query, use_autoprompt=True, start_published_date="2023-06-01"
+    prompt, use_autoprompt=True, start_published_date="2023-06-01"
 )
 
 SYSTEM_MESSAGE = "You are a helpful assistant that summarizes the content of a webpage. Summarize the users input."
